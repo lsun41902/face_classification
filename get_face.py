@@ -87,7 +87,7 @@ class FaceImage:
 
                     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)  # 연산 속도를 위해 흑백으로 전환
                     face = face_cascade.detectMultiScale(gray, scaleFactor=1.3,
-                                                         minneighbors=5)  # sclaeFacotr = 얼굴을 얼마나 세밀하게 찾을까?, minNeighbors = 얼굴이라고 확신하려면 몇번이나 겹쳐야 할까?
+                                                         minNeighbors=5)  # sclaeFacotr = 얼굴을 얼마나 세밀하게 찾을까?, minNeighbors = 얼굴이라고 확신하려면 몇번이나 겹쳐야 할까?
                     if len(face) > 0:
                         (x, y, w, h) = face[0]
                         margin = 20
