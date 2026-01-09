@@ -101,10 +101,10 @@ class Study:
             validation_data=(X_test, y_test),
             verbose=1
         )
-        dnn_loss, dnn_acc = model.evaluate(X_test, y_test, verbose=0)
+        cnn_loss, cnn_acc = model.evaluate(X_test, y_test, verbose=0)
 
-        print(f"CNN 정확도:{dnn_acc * 100:.2f}% 입니다.")
-        if  0.7 <= dnn_acc <= 0.88:
+        print(f"CNN 정확도:{cnn_acc * 100:.2f}% 입니다.")
+        if  0.7 <= cnn_acc <= 0.88:
             save_path = os.path.join(self.current_path,'face_model.keras')
             model.save(save_path)
             print("모델을 저장 했습니다.")
