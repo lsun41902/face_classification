@@ -14,6 +14,7 @@
 * `*.keras`: 학습이 완료된 딥러닝 모델 파일들입니다.
 
 ## 🚀 시작하기 (How to Use)
+Python 3.11 ver
 1. **라이브러리 설치**:
    ```bash
    pip install opencv-python tensorflow numpy
