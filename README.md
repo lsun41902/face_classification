@@ -18,3 +18,5 @@ Python 3.11 ver
 1. **라이브러리 설치**:
    ```bash
    pip install opencv-python tensorflow numpy
+   
+이미지 출저: 인터넷
